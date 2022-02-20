@@ -2,13 +2,13 @@ import { getExistingFavs } from "./ui/favFunctions.js";
 
 const favourites = getExistingFavs();
 const wishContainer = document.querySelector(".wishContainer");
-const noWishMessage = document.querySelector(".wishContainer__message");
 
+
+if(favourites.length === 0) {
+    wishContainer.innerHTML = `<div class="message emptyWishlist">You have no items in your wishlist!</div>`
+}
 
 favourites.forEach((favourite) => {
-
-    noWishMessage.innerHTML = "";
-
 
     wishContainer.innerHTML +=  `<div class="product">
                                         <h2>${favourite.title}</h2> 

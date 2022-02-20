@@ -49,6 +49,7 @@ async function getResult() {
         }
         
     } catch (error) {
+        console.log(error);
         displayMessage("error", "Oh no! An unexpected error occured.", ".resultsContainer");
     }
 }
