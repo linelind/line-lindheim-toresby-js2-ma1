@@ -10,7 +10,8 @@ export function searchResults(result) {
 
             if (result.price <= searchValue) {
                 return true;
-            } 
+            }
+
         });
 
         renderResults(filteredResults);
