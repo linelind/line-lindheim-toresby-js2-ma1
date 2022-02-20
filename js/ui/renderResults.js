@@ -14,8 +14,6 @@ export function renderResults(resultToRender) {
             return fav.title === result.title;
         });
     
-        console.log(doesObjectExist);
-
         if(doesObjectExist) {
             cssClass = "fas";
         }
