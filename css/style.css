@@ -1,0 +1,79 @@
+body {
+  max-width: 600px;
+  margin: auto;
+  background-color: #f3f3f3;
+}
+
+h1 {
+  font-size: 32px;
+  margin-left: 40px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+footer {
+  color: rgb(97, 97, 97);
+  text-align: center;
+}
+
+.search {
+  margin: 10px 40px;
+  padding: 5px;
+  border: 1px solid darkcyan;
+  box-shadow: 0px 2px 1px darkcyan;
+  border-radius: 3px;
+}
+
+.product {
+  padding: 10px 20px;
+  margin: 20px 40px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px lightgray;
+}
+
+.message {
+  border: 1px solid grey;
+  color: grey;
+  margin: 20px;
+  padding: 15px;
+}
+
+.message.error {
+  border-color: darkred;
+  color: darkred;
+  background-color: rgba(255, 0, 0, 0.205);
+}
+
+.message.success {
+  border-color: darkgreen;
+  color: darkgreen;
+  background-color: rgba(0, 255, 0, 0.205);
+}
+
+.message.noresult {
+  border-color: rgb(1, 82, 82);
+  color: rgb(1, 82, 82);
+  background-color: rgba(1, 82, 82, 0.11);
+}
+
+.loader {
+  border: 20px solid #fff;
+  border-top: 20px solid darkcyan;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: 50px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
